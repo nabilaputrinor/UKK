@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7249960-E57D-4A38-854E-5ED874D7A44C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>UKK_NABILA.My.MyApplication</StartupObject>
+    <RootNamespace>UKK_NABILA</RootNamespace>
+    <AssemblyName>UKK_NABILA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\ACER\Downloads\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>UKK_NABILA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>UKK_NABILA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6867FD5161FBF89F11B786A6BFCCA3AE3846B203</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>UKK_NABILA_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAwal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAwal.Designer.vb">
+      <DependentUpon>FrmAwal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBarang.Designer.vb">
+      <DependentUpon>FrmBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatHistory.Designer.vb">
+      <DependentUpon>FrmDatHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistory.Designer.vb">
+      <DependentUpon>FrmHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLap.Designer.vb">
+      <DependentUpon>FrmLap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLap_Brg.Designer.vb">
+      <DependentUpon>FrmLap_Brg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLap_Brg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLap_History.Designer.vb">
+      <DependentUpon>FrmLap_History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLap_History.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLap_Lelang.Designer.vb">
+      <DependentUpon>FrmLap_Lelang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLap_Lelang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LapBarang.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LapBarang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmLelang.Designer.vb">
+      <DependentUpon>FrmLelang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLelang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLog_Masyarakat.Designer.vb">
+      <DependentUpon>FrmLog_Masyarakat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLog_Masyarakat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLog_Petugas.Designer.vb">
+      <DependentUpon>FrmLog_Petugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLog_Petugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMasyarakat.Designer.vb">
+      <DependentUpon>FrmMasyarakat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMasyarakat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.vb">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPetugas.Designer.vb">
+      <DependentUpon>FrmPetugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPetugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegis.Designer.vb">
+      <DependentUpon>FrmRegis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LapHistory.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LapHistory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LapLelang.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LapLelang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAwal.resx">
+      <DependentUpon>FrmAwal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBarang.resx">
+      <DependentUpon>FrmBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatHistory.resx">
+      <DependentUpon>FrmDatHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHistory.resx">
+      <DependentUpon>FrmHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLap.resx">
+      <DependentUpon>FrmLap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLap_Brg.resx">
+      <DependentUpon>FrmLap_Brg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLap_History.resx">
+      <DependentUpon>FrmLap_History.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLap_Lelang.resx">
+      <DependentUpon>FrmLap_Lelang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LapBarang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LapBarang.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLelang.resx">
+      <DependentUpon>FrmLelang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLog_Masyarakat.resx">
+      <DependentUpon>FrmLog_Masyarakat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLog_Petugas.resx">
+      <DependentUpon>FrmLog_Petugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasyarakat.resx">
+      <DependentUpon>FrmMasyarakat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPetugas.resx">
+      <DependentUpon>FrmPetugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegis.resx">
+      <DependentUpon>FrmRegis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LapHistory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LapHistory.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LapLelang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LapLelang.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="UKK_NABILA_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
